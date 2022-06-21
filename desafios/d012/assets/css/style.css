@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* Como especificar as fontes
+font-family: 'Passion One', cursive;
+font-family: 'Sriracha', cursive;
+
+Configuração global */
+:root{
+    --fontdestaque: 'Passion One', cursive;
+    --fonttexto: 'Sriracha', cursive;
+    --fontnormal: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Para retirar as margens */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #949D81;
+    font-family: var(--fontnormal);
+}
+
+/* Cabeçalho */
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header > h1{
+    font-family: var(--fontdestaque);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header p{
+    font-family: var(--fontnormal);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontnormal);
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* Corpo */
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+
+section{
+    padding: 10vh 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonttexto);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.img{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+section.img > p{
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;
+}
+
+section#img01{
+    background-image: url('../img/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../img/background002.jpg');
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
