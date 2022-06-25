@@ -71,8 +71,8 @@ section{
     padding-bottom: 2em;
 }
 
-section > p{
-    
+section > P{
+    padding-bottom: 2em;
 }
 
 section.normal{
